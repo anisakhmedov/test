@@ -4,17 +4,36 @@ import Vue from 'vue'
 Vue.use(Vuex)
 
 const state = () => ({
-    
+    Courses: [
+        {
+            title: 'ChertNodes',
+            discription: 'Minecraft servers hosting ',
+            stack: [
+                {
+                    title: 'HTML'
+                },
+                {
+                    title: 'SCSS'
+                },
+                {
+                    title: 'Python'
+                },
+                {
+                    title: 'Flask'
+                },
+            ]
+        }
+    ]
 })
 
 const getters = {
-    Tours: state => state.tours,
+    Courses: state => state.Courses,
 }
 
 const mutations = {
-    ChangeItem(state, param) {
+    // ChangeItem(state, param) {
         
-    },
+    // },
 }
 
 

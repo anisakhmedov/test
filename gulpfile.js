@@ -2,7 +2,6 @@
 const gulp = require('gulp')
 const autoprefixer = require('gulp-autoprefixer') // prefixex
 const cleanCSS = require('gulp-clean-css') // minify css
-const concat = require('gulp-concat') // unit files
 const sass = require('gulp-sass')(require('sass')) // scss sass
 
 // sources
@@ -21,7 +20,6 @@ sass.compiler = require('node-sass');
 function CustomStyles() {
     return gulp.src(paths.styles.src.custom)
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('style.css'))
         .pipe(autoprefixer({ overrideBrowserslist: ['> 1%'], cascade: false }))
         .pipe(cleanCSS({ level: 2 }))
         .pipe(gulp.dest(paths.styles.dist))

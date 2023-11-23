@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Tour orient & Travel',
+    title: 'Portfolio',
     htmlAttrs: {
       lang: 'en'
     },
@@ -22,7 +22,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/static/css/style.css',
+    '~/static/css/index.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -45,17 +45,14 @@ export default {
     '@nuxtjs/i18n',
   ],
   i18n: {
-    locales: ['uz', 'en', 'ru'],
+    locales: ['en', 'ru'],
     parsePages: false,
-    defaultLocale: 'uz',
+    defaultLocale: 'en',
     vueI18n: {
-      fallbackLocale: 'uz',
+      fallbackLocale: 'en',
       messages: {
         en: {
           localTime: 'Local time',
-        },
-        uz: {
-          localTime: 'Mahalliy vaqt',
         },
         ru: {
           welcome: 'Добро пожаловать',

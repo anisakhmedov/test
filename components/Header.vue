@@ -1,8 +1,31 @@
 <template>
-    <div id="viewport">
-        <div class="container">
-            
+    <div id="Header">
+        <div class="logo">
+            <img src="~/static/images/Logo.svg" alt="">
+            <span>
+                Elias
+            </span>
         </div>
+        <nav>
+            <ul>
+                <li>
+                    <span class="dash">#</span>
+                    <span>home</span>
+                </li>
+                <li>
+                    <span class="dash">#</span>
+                    <span>works</span>
+                </li>
+                <li>
+                    <span class="dash">#</span>
+                    <span>about-me</span>
+                </li>
+                <li>
+                    <span class="dash">#</span>
+                    <span>contacts</span>
+                </li>
+            </ul>
+        </nav>
     </div>
 </template>
 
@@ -15,10 +38,10 @@ export default {
         }
     },
     methods: {
-       
+
     },
     mounted() {
-       
+
     },
 
 }
