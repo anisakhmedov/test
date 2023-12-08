@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Portfolio',
+    title: 'Test',
     htmlAttrs: {
       lang: 'en'
     },
@@ -23,6 +23,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/static/css/index.css',
+    '~/static/css/font.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -42,25 +43,5 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/i18n',
   ],
-  i18n: {
-    locales: ['en', 'ru'],
-    parsePages: false,
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        en: {
-          localTime: 'Local time',
-        },
-        ru: {
-          welcome: 'Добро пожаловать',
-        }
-      }
-    },
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {
-    }
-  }
 }
